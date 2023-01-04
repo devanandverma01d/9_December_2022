@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Datatype part 2 In JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+    </style>
+    <script src="./js/script.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <h1 id="demo1"></h1>
+    <strong data-x="y"></strong>
+
+
+    <script src="./js/script.js"></script>
+    <script>
+        //The 1st way to create an array i.e [] ---> square bracket
+        let student = ["A", "B", "C"];
+        //this is 1st way to log/display the JS code
+        console.log(student[0]);
+
+        // 2nd way to create an array i.e Array()  <---
+        let cars = ["Tata", 'Maruti', `Mahindra`];
+
+        //This is the 2nd way to log/display JS code
+        window.alert(cars[0]);
+
+        //this  is the 3rd way toi log/display the JS code
+        document.write('<div>' + cars[1] + '</div>')
+
+        //This is the 4th method to log/display the JS code
+        let z = document.getElementById('demo1');
+        z.innerHTML = cars[2];
+        z.style.color = "red";
+
+
+        //let's create another Array
+        let friends = []  //This is called Array declaration
+        friends[0] = "Rakesh";
+        friends[1] = "Devendra";
+        friends[2] = "Dravid";
+        //this is one of the way to log/display JS code
+        console.log(friends[0]);
+        friends[3] = "Neelkanth";
+        friends[3] = "Amrendra Bahubali"
+        //This is one of the way to log/display the JS code
+        document.write('<h1>' + friends[3] + '</h1>');
+
+        //this is one the ways to log/display the JS code
+        document.querySelector('strong[data-x = "y"]').innerHTML = "My best friends are " + friends;
+    </script>
+</body>
+
+</html>
